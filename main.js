@@ -26,8 +26,8 @@ client.once('ready', async () => {
 
     // remove and switch to database
     // hyland server channels
-    countChan = await client.channels.fetch('1007371696212279356');
-    countDisc = await client.channels.fetch('1022161639040102451');
+    countChan = await client.channels.fetch('1039180082599710822');
+    countDisc = await client.channels.fetch('1042098281993478246');
 
     // testing server channels
     /* countChan = await client.channels.fetch('1004202416314515466');
