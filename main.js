@@ -72,6 +72,13 @@ client.on("messageCreate", async msg => {
                 });
                 return;
             }
+            if (msg.content.indexOf(".") > -1) {
+                msg.delete().then(() => {
+                    let rand = Math.floor(Math.random() * (resMessages.decimal.length - 1));
+                    countDisc.send(`${transformHeader(msg)} ${resMessages.decimal[rand]}`);
+                });
+                return;
+            }
             if (msg.content != (parseInt(lastMessage.content) + 1)) {
                 msg.delete().then(() => {
                     let rand = Math.floor(Math.random() * (resMessages.wrongNum.length - 1));
